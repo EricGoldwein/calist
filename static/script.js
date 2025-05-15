@@ -148,12 +148,12 @@ function toggleLanguage() {
         
         const serviceCards = servicesSection.querySelectorAll('.service-card');
         if (serviceCards.length >= 3) {
-            serviceCards[0].querySelector('h3').textContent = translations[currentLang].calistenia;
-            serviceCards[0].querySelector('p').textContent = translations[currentLang].calisteniaDesc;
-            serviceCards[1].querySelector('h3').textContent = translations[currentLang].kinesiologia;
-            serviceCards[1].querySelector('p').textContent = translations[currentLang].kinesiologiaDesc;
-            serviceCards[2].querySelector('h3').textContent = translations[currentLang].espiritual;
-            serviceCards[2].querySelector('p').textContent = translations[currentLang].espiritualDesc;
+    serviceCards[0].querySelector('h3').textContent = translations[currentLang].calistenia;
+    serviceCards[0].querySelector('p').textContent = translations[currentLang].calisteniaDesc;
+    serviceCards[1].querySelector('h3').textContent = translations[currentLang].kinesiologia;
+    serviceCards[1].querySelector('p').textContent = translations[currentLang].kinesiologiaDesc;
+    serviceCards[2].querySelector('h3').textContent = translations[currentLang].espiritual;
+    serviceCards[2].querySelector('p').textContent = translations[currentLang].espiritualDesc;
         }
     }
     
@@ -188,10 +188,10 @@ function toggleLanguage() {
         
         const aboutParagraphs = aboutSection.querySelectorAll('.about-text p');
         if (aboutParagraphs.length >= 4) {
-            aboutParagraphs[0].textContent = translations[currentLang].bioIntro;
-            aboutParagraphs[1].textContent = translations[currentLang].bioTraining;
-            aboutParagraphs[2].textContent = translations[currentLang].bioMassage;
-            aboutParagraphs[3].textContent = translations[currentLang].bioLocation;
+    aboutParagraphs[0].textContent = translations[currentLang].bioIntro;
+    aboutParagraphs[1].textContent = translations[currentLang].bioTraining;
+    aboutParagraphs[2].textContent = translations[currentLang].bioMassage;
+    aboutParagraphs[3].textContent = translations[currentLang].bioLocation;
         }
     }
     
@@ -224,4 +224,15 @@ function toggleLanguage() {
     if (footer) {
         footer.textContent = `© 2025 320 Consulting - ${translations[currentLang].copyright}`;
     }
-} 
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Floating WhatsApp button functionality
+    const floatingWhatsapp = document.querySelector('.floating-whatsapp');
+    if (floatingWhatsapp) {
+        floatingWhatsapp.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open('https://wa.me/5491161603163', '_blank');
+        });
+    }
+}); 
