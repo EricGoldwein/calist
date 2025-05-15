@@ -3,50 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Historia | Seba - Kinesiólogo y Entrenador</title>
+    <title>Biografía - Sebastian Tettamanzi</title>
     <link rel="stylesheet" href="static/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html" class="logo">Seba</a>
-        <ul class="nav-links">
-            <li><a href="index.html#inicio">Inicio</a></li>
-            <li><a href="index.html#servicios">Servicios</a></li>
-            <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
-            <li><a href="index.html#contacto">Contacto</a></li>
-            <li class="language-toggle">
-                <button onclick="toggleLanguage()">
-                    <span class="lang-text">EN</span>
-                </button>
-            </li>
-        </ul>
-        <button class="menu-toggle">
+        <div class="logo">SEBA</div>
+        <div class="positions">Kinesiólogo | Calistenia | Artista</div>
+        <button class="menu-toggle" aria-label="Menu">
             <span></span>
             <span></span>
             <span></span>
         </button>
+        <ul class="nav-links">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#servicios">Servicios</a></li>
+            <li><a href="index.html#sobre-mi">Sobre Seba</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
     </nav>
 
-    <section class="full-bio">
-        <div class="container">
+    <article class="bio-article">
+        <div class="article-header">
             <a href="index.html" class="back-link">
                 <i class="fas fa-arrow-left"></i>
                 <span class="back-text">Volver</span>
             </a>
-            <h1 class="bio-title">Mi Historia</h1>
-            <div class="bio-content">
-                <p class="bio-intro">Hola, soy Seba — entrenador de calistenia, masajista, actor y kinesiólogo. Mi enfoque combina entrenamiento funcional, rehabilitación y desarrollo personal para crear una experiencia holística.</p>
-                
-                <p class="bio-training">En mis clases trabajamos fuerza, movilidad y conciencia corporal usando ejercicios como planchas, puentes, dominadas y verticales. Mi experiencia internacional me ha permitido trabajar con clientes de todo el mundo, desde Buenos Aires hasta Brooklyn y Alemania. Hablo español e inglés, pero sobre todo, hablo el lenguaje del cuerpo — una comunicación universal que trasciende las barreras del idioma.</p>
-                
-                <p class="bio-massage">También ofrezco masajes terapéuticos, un espacio para liberar tensiones y promover la recuperación muscular. Mi experiencia como modelo y actor me ha dado una profunda comprensión del movimiento y la expresión corporal, conocimientos que aplico en todas mis prácticas.</p>
-                
-                <p class="bio-location">Realizo mis clases de calistenia en Calistenia Haiti, un espacio dedicado al entrenamiento funcional. ¡Te invito a conocer el lugar!</p>
+        </div>
+
+        <div class="article-content">
+            <div class="article-intro">
+                <p class="dropcap">Hola, soy Sebastian Tettamanzi. Mi trayectoria como entrenador de calistenia, kinesiólogo y artista ha sido un viaje de pasión y dedicación. Desde joven, me apasioné por el movimiento y la expresión corporal, lo que me llevó a explorar diferentes disciplinas y a formarme en áreas como la calistenia, la kinesiología y el masaje terapéutico.</p>
+            </div>
+
+            <div class="article-body">
+                <p>Mi enfoque combina entrenamiento funcional, rehabilitación y desarrollo personal para crear una experiencia holística. En mis clases, trabajamos fuerza, movilidad y conciencia corporal usando ejercicios como planchas, puentes, dominadas y verticales. Cada sesión está diseñada para desafiar tus límites mientras construyes una base sólida de fuerza y control.</p>
+
+                <blockquote class="featured-quote">
+                    "El cuerpo tiene su propio lenguaje — una comunicación universal que trasciende las palabras."
+                </blockquote>
+
+                <p>Mi experiencia internacional me ha permitido trabajar con clientes de todo el mundo, desde Buenos Aires hasta Brooklyn y Alemania. Esta diversidad de experiencias me ha enseñado que el movimiento y la expresión corporal son lenguajes universales que conectan a las personas más allá de las barreras culturales y lingüísticas. Además de español, también me comunico en inglés, lo que me permite conectar con una comunidad global de clientes.</p>
+
+                <p>También ofrezco masajes terapéuticos, un espacio para liberar tensiones y promover la recuperación muscular. Mi experiencia como modelo y actor me ha dado una profunda comprensión del movimiento y la expresión corporal, conocimientos que aplico en todas mis prácticas.</p>
+
+                <p>Realizo mis clases de calistenia en <strong>Calistenia Haiti</strong>, un espacio dedicado al entrenamiento funcional. El lugar está diseñado para proporcionar un ambiente seguro y motivador donde puedes desarrollar tu potencial físico y mental.</p>
+
+                <p>Mi compromiso es ayudarte a alcanzar tus objetivos, ya sea mejorar tu condición física, recuperarte de una lesión o desarrollar una conexión más profunda con tu cuerpo. Cada persona es única, y adapto mis métodos para satisfacer tus necesidades específicas.</p>
             </div>
         </div>
-    </section>
+    </article>
 
     <script src="static/script.js"></script>
 </body>

@@ -12,7 +12,8 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Seba</div>
+        <div class="logo">SEBA</div>
+        <div class="positions">Kinesiólogo | Calistenia | Artista</div>
         <button class="menu-toggle" aria-label="Menu">
             <span></span>
             <span></span>
@@ -21,37 +22,18 @@
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#sobre-mi">Sobre Seba</a></li>
             <li><a href="#contacto">Contacto</a></li>
-            <li class="language-toggle">
-                <button onclick="toggleLanguage()" aria-label="Toggle language">
-                    <span class="lang-text">EN</span>
-                </button>
-            </li>
         </ul>
     </nav>
 
     <main>
         <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h1>Seba</h1>
-                <h2>Kinesiólogo y Entrenador de Calistenia</h2>
-                <p>Transformá tu cuerpo y mente a través del movimiento</p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/5491161632060" class="cta-button whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                        WhatsApp
-                    </a>
-                    <a href="https://www.instagram.com/seba.kinesiologo/" class="cta-button instagram" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        Instagram
-                    </a>
-                </div>
-            </div>
+            <!-- Remove Instagram and WhatsApp buttons from hero section -->
         </section>
 
         <section id="servicios" class="services">
-            <h2>Servicios</h2>
+            <h2 style="font-size:2.2rem;font-weight:700;color:#3498db;letter-spacing:-1px;line-height:1.2;margin-bottom:2.5rem;">Transformá tu cuerpo y mente a través del movimiento</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
@@ -90,8 +72,8 @@
                 </div>
                 <div class="about-text">
                     <h2>Sobre Mí</h2>
-                    <p>Hola, soy Seba — entrenador de calistenia, masajista, actor y kinesiólogo. Mi enfoque combina entrenamiento funcional, rehabilitación y desarrollo personal para crear una experiencia holística.</p>
-                    <p>En mis clases trabajamos fuerza, movilidad y conciencia corporal usando ejercicios como planchas, puentes, dominadas y verticales. Mi experiencia internacional me ha permitido trabajar con clientes de todo el mundo, desde Buenos Aires hasta Brooklyn y Alemania. Hablo español e inglés, pero sobre todo, hablo el lenguaje del cuerpo — una comunicación universal que trasciende las barreras del idioma.</p>
+                    <p>Hola, soy Sebastian Tettamanzi — entrenador de calistenia, masajista, actor y kinesiólogo. Mi enfoque combina entrenamiento funcional, rehabilitación y desarrollo personal para crear una experiencia holística.</p>
+                    <p>En mis clases trabajamos fuerza, movilidad y conciencia corporal usando ejercicios como planchas, puentes, dominadas y verticales. Mi experiencia internacional me ha permitido trabajar con clientes de todo el mundo, desde Buenos Aires hasta Brooklyn y Alemania. Hablo español y también inglés (aunque no soy nativo), pero sobre todo, hablo el lenguaje del cuerpo — una comunicación universal que trasciende las barreras del idioma.</p>
                     <p>También ofrezco masajes terapéuticos, un espacio para liberar tensiones y promover la recuperación muscular. Mi experiencia como modelo y actor me ha dado una profunda comprensión del movimiento y la expresión corporal, conocimientos que aplico en todas mis prácticas.</p>
                     <p>Realizo mis clases de calistenia en <strong>Calistenia Haiti</strong>, un espacio dedicado al entrenamiento funcional. ¡Te invito a conocer el lugar!</p>
                     <a href="bio-completa.html" class="read-more">Leer biografía completa <i class="fas fa-arrow-right"></i></a>
@@ -104,7 +86,7 @@
             <div class="videos-grid">
                 <div class="instagram-highlight">
                     <div class="highlight-preview">
-                        <video controls class="highlight-video">
+                        <video controls class="highlight-video" preload="metadata" poster="static/seba_vid_3_poster.jpg">
                             <source src="static/seba_vid_3.mp4" type="video/mp4">
                             Tu navegador no soporta el elemento de video.
                         </video>
@@ -113,7 +95,7 @@
                 </div>
                 <div class="instagram-highlight">
                     <div class="highlight-preview">
-                        <video controls class="highlight-video">
+                        <video controls class="highlight-video" preload="metadata" poster="static/seba_video_masaje_poster.jpg">
                             <source src="static/seba_video_masaje.mp4" type="video/mp4">
                             Tu navegador no soporta el elemento de video.
                         </video>
@@ -141,18 +123,28 @@
             </div>
         </section>
 
-        <section id="contacto" class="contact">
-            <h2>Contacto</h2>
+        <section class="contact" id="contacto">
             <div class="contact-content">
+                <h2>Contacto</h2>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/sebatetaman/" class="social-link instagram" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://wa.me/5491112345678" class="social-link whatsapp" aria-label="WhatsApp">
+                    <a href="https://wa.me/5491168188488" class="social-link whatsapp" target="_blank">
                         <i class="fab fa-whatsapp"></i>
                     </a>
+                    <a href="https://www.instagram.com/seba.tettamanzi" class="social-link instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
-                <p>¡Escribime por WhatsApp para más información!</p>
+                <p>¿Listo para comenzar tu viaje? Contáctame directamente por WhatsApp o Instagram.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5491168188488" class="cta-button whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Contactar por WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/seba.tettamanzi" class="cta-button instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        Seguir en Instagram
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -161,7 +153,22 @@
         <p>&copy; 2025 320 Consulting - Todos los derechos reservados</p>
     </footer>
 
+    <div id="whatsapp-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>¡Hablemos!</h2>
+            <p>¿Tienes preguntas sobre mis servicios? Estoy aquí para ayudarte.</p>
+            <a href="https://wa.me/5491168188488" class="whatsapp-link" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Chatear por WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <button id="open-popup" class="floating-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+
     <script src="static/script.js"></script>
-    <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html> 
