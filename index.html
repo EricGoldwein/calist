@@ -23,6 +23,11 @@
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#sobre-mi">Sobre Mí</a></li>
             <li><a href="#contacto">Contacto</a></li>
+            <li class="language-toggle">
+                <button onclick="toggleLanguage()" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
+            </li>
         </ul>
     </nav>
 
@@ -33,13 +38,13 @@
                 <h2>Kinesiólogo y Entrenador de Calistenia</h2>
                 <p>Transformá tu cuerpo y mente a través del movimiento</p>
                 <div class="cta-buttons">
-                    <a href="https://wa.me/5491112345678" class="cta-button whatsapp">
+                    <a href="https://wa.me/5491161632060" class="cta-button whatsapp" target="_blank">
                         <i class="fab fa-whatsapp"></i>
-                        <span>WhatsApp</span>
+                        WhatsApp
                     </a>
-                    <a href="https://www.instagram.com/sebatetaman/" class="cta-button instagram">
+                    <a href="https://www.instagram.com/seba.kinesiologo/" class="cta-button instagram" target="_blank">
                         <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
+                        Instagram
                     </a>
                 </div>
             </div>
@@ -75,19 +80,45 @@
         <section id="sobre-mi" class="about">
             <div class="about-content">
                 <div class="about-image">
-                    <img src="static/seba_3.jpg" alt="Seba" class="main-image">
+                    <img src="static/seba_bio.png" alt="Seba" class="main-image">
                     <div class="image-gallery">
                         <img src="static/seba_stretch.jpg" alt="Seba stretching" class="gallery-image">
-                        <img src="static/seba_site.jpeg" alt="Seba training" class="gallery-image">
+                        <div class="gallery-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4269.312157118572!2d-58.42604331012538!3d-34.56867970326411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5000e6a6c4d%3A0xc735a87a04c7855b!2sCalistenia%20Haiti!5e1!3m2!1sen!2sus!4v1747076237128!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
                 <div class="about-text">
                     <h2>Sobre Mí</h2>
-                    <p>Hola, soy Seba — entrenador de calistenia, masajista, actor y kinesiólogo.</p>
-                    <p>En mis clases trabajamos fuerza, movilidad y conciencia corporal. Usamos ejercicios como planchas, puentes, movilidad de columna, dominadas, flexiones y verticales para construir un cuerpo más fuerte y flexible. Están pensadas para cualquier persona: adultos mayores, principiantes o quienes ya entrenan. Vamos a tu ritmo, con el objetivo de avanzar de forma sostenida y mejorar la calidad de vida.</p>
-                    <p>También ofrezco masajes. Es un espacio para soltar tensiones, acompañar la recuperación y trabajar la flexibilidad desde otro lado.</p>
-                    <p>Más allá del cuerpo, me interesa mucho cómo nos vinculamos con nosotros mismos y con los demás. Estudio Un Curso de Milagros con mi papá —una práctica espiritual que compartimos y que nos ayuda a reflexionar y conectar. Además, actúo en una obra histórica (La Lección de Anatomía), que cuestiona los mandatos, miedos y roles que tomamos en la vida: como pareja, hijos, padres o trabajadores.</p>
-                    <p>En todo lo que hago, mi intención es la misma: ayudar a que las personas se sientan más conectadas —con su cuerpo, con los demás y con algo más grande. Mis clases son un espacio para moverse, crecer, reír y, poco a poco, formar una comunidad más tranquila.</p>
+                    <p>Hola, soy Seba — entrenador de calistenia, masajista, actor y kinesiólogo. Mi enfoque combina entrenamiento funcional, rehabilitación y desarrollo personal para crear una experiencia holística.</p>
+                    <p>En mis clases trabajamos fuerza, movilidad y conciencia corporal usando ejercicios como planchas, puentes, dominadas y verticales. Mi experiencia internacional me ha permitido trabajar con clientes de todo el mundo, desde Buenos Aires hasta Brooklyn y Alemania. Hablo español e inglés, pero sobre todo, hablo el lenguaje del cuerpo — una comunicación universal que trasciende las barreras del idioma.</p>
+                    <p>También ofrezco masajes terapéuticos, un espacio para liberar tensiones y promover la recuperación muscular. Mi experiencia como modelo y actor me ha dado una profunda comprensión del movimiento y la expresión corporal, conocimientos que aplico en todas mis prácticas.</p>
+                    <p>Realizo mis clases de calistenia en <strong>Calistenia Haiti</strong>, un espacio dedicado al entrenamiento funcional. ¡Te invito a conocer el lugar!</p>
+                    <a href="bio-completa.html" class="read-more">Leer biografía completa <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="videos">
+            <h2>Videos y Momentos</h2>
+            <div class="videos-grid">
+                <div class="instagram-highlight">
+                    <div class="highlight-preview">
+                        <video controls class="highlight-video">
+                            <source src="static/seba_vid_3.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <p class="highlight-description">Mira un ejemplo de mis entrenamientos y la energía que comparto en cada clase.</p>
+                </div>
+                <div class="instagram-highlight">
+                    <div class="highlight-preview">
+                        <video controls class="highlight-video">
+                            <source src="static/seba_video_masaje.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <p class="highlight-description">Descubrí el poder terapéutico de mis masajes, diseñados para liberar tensiones y promover la recuperación muscular.</p>
                 </div>
             </div>
         </section>
@@ -95,9 +126,17 @@
         <section id="testimonios" class="testimonials">
             <h2>Testimonios</h2>
             <div class="testimonials-grid">
-                <!-- Placeholder para testimonios -->
                 <div class="testimonial-card">
-                    <p>"Próximamente..."</p>
+                    <p>"Seba transformó mi forma de entrenar. Después de años de gimnasio tradicional, descubrí la calistenia con él y fue un antes y después. No solo mejoré físicamente, sino que también encontré una nueva forma de conectarme con mi cuerpo."</p>
+                    <div class="testimonial-author">- María, 32 años</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Como adulto mayor, pensé que ya no podía hacer ejercicio. Seba me demostró lo contrario. Sus clases son adaptadas, seguras y efectivas. He recuperado movilidad y fuerza que creía perdidas."</p>
+                    <div class="testimonial-author">- Carlos, 68 años</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"La combinación de kinesiología y calistenia que ofrece Seba es única. Me ayudó a recuperarme de una lesión y ahora estoy más fuerte que nunca. Su enfoque holístico hace toda la diferencia."</p>
+                    <div class="testimonial-author">- Lucía, 25 años</div>
                 </div>
             </div>
         </section>
@@ -119,9 +158,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Seba - Todos los derechos reservados</p>
+        <p>&copy; 2025 320 Consulting - Todos los derechos reservados</p>
     </footer>
 
     <script src="static/script.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html> 
