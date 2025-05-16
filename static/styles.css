@@ -351,6 +351,12 @@ section h2 {
     display: block;
 }
 
+.gallery-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .about-text {
     padding: 0;
 }
@@ -583,6 +589,10 @@ footer {
     .video-container video::-webkit-media-controls-current-time-display,
     .video-container video::-webkit-media-controls-time-remaining-display {
         font-size: 14px;
+    }
+
+    .gallery-map img {
+        object-position: -140px center;  /* Increased left offset to -200px */
     }
 }
 
